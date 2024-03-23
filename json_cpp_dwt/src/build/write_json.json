@@ -1,0 +1,7 @@
+{
+	"age" : 23,
+	"coder" : true,
+	"friends" : [ "LiSi", "WangEr", "Mazi" ],
+	"gender" : "male",
+	"name" : "ZhangSan"
+}

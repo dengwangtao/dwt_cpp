@@ -1,0 +1,12 @@
+{
+    "name": "dengwangtao",
+    "age": 23,
+    "gender": "male",
+    "friends": [
+        1, 2, 3, 6, 9
+    ],
+    "address": {
+        "province": "Henan",
+        "city": "Kaifeng"
+    }
+}

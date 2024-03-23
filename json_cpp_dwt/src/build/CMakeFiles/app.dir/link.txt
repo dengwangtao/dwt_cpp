@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app.dir/main.cpp.o -o app   -L/home/cpp/cpp_code/dwt_cpp/json_cpp_dwt/src/lib  -Wl,-rpath,/home/cpp/cpp_code/dwt_cpp/json_cpp_dwt/src/lib -ljsoncpp

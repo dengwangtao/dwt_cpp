@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/main.dir/main.cpp.o -o /dwt/cpp_code/dwt_cpp/json_hpp_test/bin/main

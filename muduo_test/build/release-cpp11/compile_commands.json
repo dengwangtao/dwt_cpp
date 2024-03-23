@@ -1,0 +1,278 @@
+[
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/AsyncLogging.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/AsyncLogging.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/AsyncLogging.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Condition.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Condition.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Condition.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/CountDownLatch.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/CountDownLatch.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/CountDownLatch.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/CurrentThread.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/CurrentThread.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/CurrentThread.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/CurrentThread.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Date.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Date.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Date.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Date.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Exception.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Exception.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Exception.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/FileUtil.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/FileUtil.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/FileUtil.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/LogFile.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/LogFile.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/LogFile.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Logging.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Logging.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Logging.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/LogStream.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/LogStream.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/LogStream.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/ProcessInfo.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/ProcessInfo.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/ProcessInfo.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Timestamp.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Timestamp.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Timestamp.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/Thread.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Thread.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/Thread.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/ThreadPool.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/ThreadPool.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/ThreadPool.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/base",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_base.dir/TimeZone.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/TimeZone.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/base/TimeZone.cc",
+  "output": "muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Acceptor.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Acceptor.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Acceptor.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Acceptor.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Buffer.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Buffer.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Buffer.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Buffer.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Channel.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Channel.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Channel.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Channel.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Connector.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Connector.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Connector.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Connector.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/EventLoop.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoop.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoop.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/EventLoop.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/EventLoopThread.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoopThread.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoopThread.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/EventLoopThread.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/EventLoopThreadPool.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoopThreadPool.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/EventLoopThreadPool.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/EventLoopThreadPool.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/InetAddress.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/InetAddress.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/InetAddress.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/InetAddress.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Poller.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Poller.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Poller.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Poller.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/poller/DefaultPoller.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/DefaultPoller.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/DefaultPoller.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/poller/DefaultPoller.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/poller/EPollPoller.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/EPollPoller.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/EPollPoller.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/poller/EPollPoller.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/poller/PollPoller.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/PollPoller.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/poller/PollPoller.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/poller/PollPoller.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Socket.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Socket.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Socket.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Socket.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/SocketsOps.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/SocketsOps.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/SocketsOps.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/TcpClient.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpClient.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpClient.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/TcpClient.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/TcpConnection.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpConnection.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpConnection.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/TcpConnection.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/TcpServer.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpServer.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TcpServer.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/TcpServer.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/Timer.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Timer.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/Timer.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/Timer.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_net.dir/TimerQueue.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TimerQueue.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/TimerQueue.cc",
+  "output": "muduo/net/CMakeFiles/muduo_net.dir/TimerQueue.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/http",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_http.dir/HttpServer.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpServer.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpServer.cc",
+  "output": "muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/http",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_http.dir/HttpResponse.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpResponse.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpResponse.cc",
+  "output": "muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/http",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_http.dir/HttpContext.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpContext.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/http/HttpContext.cc",
+  "output": "muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/inspect",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_inspect.dir/Inspector.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/Inspector.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/Inspector.cc",
+  "output": "muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/inspect",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/PerformanceInspector.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/PerformanceInspector.cc",
+  "output": "muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/inspect",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/ProcessInspector.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/ProcessInspector.cc",
+  "output": "muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/inspect",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -o CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/SystemInspector.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/inspect/SystemInspector.cc",
+  "output": "muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protobuf",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -Wno-error=shadow -o CMakeFiles/muduo_protobuf_codec.dir/ProtobufCodecLite.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protobuf/ProtobufCodecLite.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protobuf/ProtobufCodecLite.cc",
+  "output": "muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/ProtobufCodecLite.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -I/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11 -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -Wno-error=shadow -Wno-conversion -o CMakeFiles/muduo_protorpc_wire.dir/rpc.pb.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc/rpc.pb.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc/rpc.pb.cc",
+  "output": "muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire.dir/rpc.pb.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -I/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11 -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -Wno-error=shadow -o CMakeFiles/muduo_protorpc_wire.dir/RpcCodec.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcCodec.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcCodec.cc",
+  "output": "muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire.dir/RpcCodec.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -I/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11 -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -Wno-error=shadow -o CMakeFiles/muduo_protorpc.dir/RpcChannel.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcChannel.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcChannel.cc",
+  "output": "muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/RpcChannel.cc.o"
+},
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11/muduo/net/protorpc",
+  "command": "/usr/bin/c++  -I/dwt/cpp_code/dwt_cpp/muduo_test/muduo -I/dwt/cpp_code/dwt_cpp/muduo_test/build/release-cpp11 -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O2 -DNDEBUG -Wno-error=shadow -o CMakeFiles/muduo_protorpc.dir/RpcServer.cc.o -c /dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcServer.cc",
+  "file": "/dwt/cpp_code/dwt_cpp/muduo_test/muduo/muduo/net/protorpc/RpcServer.cc",
+  "output": "muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/RpcServer.cc.o"
+}
+]

@@ -1,0 +1,3 @@
+/dwt/cpp_code/dwt_cpp/json_hpp_test/build/CMakeFiles/main.dir
+/dwt/cpp_code/dwt_cpp/json_hpp_test/build/CMakeFiles/edit_cache.dir
+/dwt/cpp_code/dwt_cpp/json_hpp_test/build/CMakeFiles/rebuild_cache.dir

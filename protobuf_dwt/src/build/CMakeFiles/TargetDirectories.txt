@@ -1,0 +1,6 @@
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/CMakeFiles/app.dir
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/CMakeFiles/edit_cache.dir
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/CMakeFiles/rebuild_cache.dir
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/test/CMakeFiles/test.dir
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/test/CMakeFiles/edit_cache.dir
+/home/cpp/cpp_code/dwt_cpp/protobuf_dwt/src/build/test/CMakeFiles/rebuild_cache.dir

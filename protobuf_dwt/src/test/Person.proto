@@ -1,0 +1,28 @@
+// 声明proto3语法
+syntax = "proto3";
+
+import "Address.proto"; // 导入 Address.proto
+
+package Deng;
+
+enum Color
+{
+    Gray = 0; // 枚举的第一个值, 必须为0
+    Red = 1;
+    Green = 2;
+    Blue = 3;
+    Yellow = 4;
+    White = 5;
+    Black = 6;
+}
+
+message Person
+{
+    int32 id = 1;
+    bytes name = 2;
+    bytes sex = 3;
+    int32 age = 4;
+    PKG.Address addr = 5; // 使用PKG包内的Address类型
+    repeated int32 friends = 6; // 数组
+    Color hair = 7; // 头发颜色
+}

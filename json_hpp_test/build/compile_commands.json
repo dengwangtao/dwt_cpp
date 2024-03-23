@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/json_hpp_test/build",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/json_hpp_test/include -g -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /dwt/cpp_code/dwt_cpp/json_hpp_test/main.cpp",
+  "file": "/dwt/cpp_code/dwt_cpp/json_hpp_test/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.o"
+}
+]

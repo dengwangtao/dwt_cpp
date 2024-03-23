@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package PKG;
+
+message Address
+{
+    int32 num = 1;
+    bytes addr = 2;
+}

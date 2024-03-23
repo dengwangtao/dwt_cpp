@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.11)
+project(muduo_test)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(server main.cpp)
+
+# 链接
+target_link_libraries(server muduo_net muduo_base pthread)

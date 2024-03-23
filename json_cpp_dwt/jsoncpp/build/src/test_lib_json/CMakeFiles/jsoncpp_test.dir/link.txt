@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/jsoncpp_test.dir/jsontest.cpp.o CMakeFiles/jsoncpp_test.dir/fuzz.cpp.o CMakeFiles/jsoncpp_test.dir/main.cpp.o -o ../../bin/jsoncpp_test  -Wl,-rpath,/home/cpp/cpp_code/dwt_cpp/json_cpp_dwt/jsoncpp/build/lib ../../lib/libjsoncpp.so.1.9.5
