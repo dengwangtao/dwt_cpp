@@ -10,6 +10,10 @@ public:
     // 添加
     bool insert(User& user);
 
+    User query(int id);
+
+    bool updateState(const User& user);
+
 private:
 
 

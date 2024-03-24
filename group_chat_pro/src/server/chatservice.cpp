@@ -38,8 +38,45 @@ myHandler ChatService::getHandler(int msgid) {
 
 // 登录
 void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) {
-    LOG_INFO << "================= do login";
+    // LOG_INFO << "================= do login";
+    int id = js["id"];
+    std::string password = js["password"];
 
+    User user = _userModel.query(id);
+
+    json response;
+
+    if(user.getId() == id && user.getPassword() == password && user.getState() == "offline") {
+        // success
+
+        {
+            std::lock_guard<std::mutex> locker(_connMutex);
+            _userConnMap[user.getId()] = conn;
+        }
+
+        response["msgid"] = EnMsgType::LOGIN_MSG_ACK;
+        response["errno"] = 0;
+        response["id"] = user.getId();
+        response["name"] = user.getName();
+
+        // 标记为已登录
+        user.setState("online");
+        _userModel.updateState(user);
+
+    } else {
+        // fail
+        response["msgid"] = EnMsgType::LOGIN_MSG_ACK;
+        response["errno"] = 1;
+        response["errmsg"] = "登录失败";
+        if(user.getState() != "offline") {
+            response["errmsg"] = "用户当前已登录";
+        }
+        if(user.getId() != id) {
+            response["errmsg"] = "用户不存在";
+        }
+    }
+
+    conn->send(response.dump());
 }
 
 // 注册
@@ -67,5 +104,29 @@ void ChatService::reg(const TcpConnectionPtr& conn, json& js, Timestamp time) {
     }
 
     conn->send(response.dump());
+}
+
+
+void ChatService::clientCloseException(const TcpConnectionPtr& conn) {
+    int id = -1;
+
+    {
+        std::lock_guard<std::mutex> locker(_connMutex);
+        for(auto it = _userConnMap.begin(); it != _userConnMap.end(); ++ it) {
+            if(it->second == conn) {
+                id = it->first; // 取出id
+                _userConnMap.erase(it);
+                break;
+            }
+        }
+    }
+
+    // 更新状态信息
+    if(id != -1) {
+        User user;
+        user.setId(id);
+        user.setState("offline");
+        _userModel.updateState(user);
+    }
 }
 

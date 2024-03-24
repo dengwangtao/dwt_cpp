@@ -4,6 +4,7 @@
 #include <muduo/net/TcpConnection.h>
 #include <functional>
 #include <unordered_map>
+#include <mutex>
 
 using namespace muduo;
 using namespace muduo::net;
@@ -32,6 +33,9 @@ public:
     // 注册
     void reg(const TcpConnectionPtr&, json& js, Timestamp);
 
+    // 客户端异常退出
+    void clientCloseException(const TcpConnectionPtr&);
+
 private:
     ChatService();
 
@@ -43,6 +47,11 @@ private:
     // msgid -> func
     std::unordered_map<int, myHandler> _handlerMap;
 
+
+    // 互斥锁
+    std::mutex _connMutex;
+    // 用户对应的连接
+    std::unordered_map<int, TcpConnectionPtr> _userConnMap;
 
     // 数据操作类
     UserModel _userModel;

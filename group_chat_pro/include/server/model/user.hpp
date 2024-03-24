@@ -31,19 +31,19 @@ public:
         this->state = state;
     }
 
-    int getId() {
+    int getId() const {
         return this->id;
     }
 
-    std::string getName() {
+    std::string getName() const {
         return this->name;
     }
 
-    std::string getPassword() {
+    std::string getPassword() const {
         return this->password;
     }
 
-    std::string getState() {
+    std::string getState() const {
         return this->state;
     }
 
