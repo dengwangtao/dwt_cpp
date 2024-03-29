@@ -226,6 +226,78 @@ main.cpp.s:
 	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/friendmodel.o: model/friendmodel.cpp.o
+.PHONY : model/friendmodel.o
+
+# target to build an object file
+model/friendmodel.cpp.o:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.o
+.PHONY : model/friendmodel.cpp.o
+
+model/friendmodel.i: model/friendmodel.cpp.i
+.PHONY : model/friendmodel.i
+
+# target to preprocess a source file
+model/friendmodel.cpp.i:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.i
+.PHONY : model/friendmodel.cpp.i
+
+model/friendmodel.s: model/friendmodel.cpp.s
+.PHONY : model/friendmodel.s
+
+# target to generate assembly for a file
+model/friendmodel.cpp.s:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.s
+.PHONY : model/friendmodel.cpp.s
+
+model/groupmodel.o: model/groupmodel.cpp.o
+.PHONY : model/groupmodel.o
+
+# target to build an object file
+model/groupmodel.cpp.o:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o
+.PHONY : model/groupmodel.cpp.o
+
+model/groupmodel.i: model/groupmodel.cpp.i
+.PHONY : model/groupmodel.i
+
+# target to preprocess a source file
+model/groupmodel.cpp.i:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.i
+.PHONY : model/groupmodel.cpp.i
+
+model/groupmodel.s: model/groupmodel.cpp.s
+.PHONY : model/groupmodel.s
+
+# target to generate assembly for a file
+model/groupmodel.cpp.s:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.s
+.PHONY : model/groupmodel.cpp.s
+
+model/offlinemessagemodel.o: model/offlinemessagemodel.cpp.o
+.PHONY : model/offlinemessagemodel.o
+
+# target to build an object file
+model/offlinemessagemodel.cpp.o:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o
+.PHONY : model/offlinemessagemodel.cpp.o
+
+model/offlinemessagemodel.i: model/offlinemessagemodel.cpp.i
+.PHONY : model/offlinemessagemodel.i
+
+# target to preprocess a source file
+model/offlinemessagemodel.cpp.i:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.i
+.PHONY : model/offlinemessagemodel.cpp.i
+
+model/offlinemessagemodel.s: model/offlinemessagemodel.cpp.s
+.PHONY : model/offlinemessagemodel.s
+
+# target to generate assembly for a file
+model/offlinemessagemodel.cpp.s:
+	cd /dwt/cpp_code/dwt_cpp/group_chat_pro/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.s
+.PHONY : model/offlinemessagemodel.cpp.s
+
 model/usermodel.o: model/usermodel.cpp.o
 .PHONY : model/usermodel.o
 
@@ -271,6 +343,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/friendmodel.o"
+	@echo "... model/friendmodel.i"
+	@echo "... model/friendmodel.s"
+	@echo "... model/groupmodel.o"
+	@echo "... model/groupmodel.i"
+	@echo "... model/groupmodel.s"
+	@echo "... model/offlinemessagemodel.o"
+	@echo "... model/offlinemessagemodel.i"
+	@echo "... model/offlinemessagemodel.s"
 	@echo "... model/usermodel.o"
 	@echo "... model/usermodel.i"
 	@echo "... model/usermodel.s"

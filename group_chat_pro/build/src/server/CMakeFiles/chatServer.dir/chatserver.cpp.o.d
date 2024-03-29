@@ -274,4 +274,9 @@ src/server/CMakeFiles/chatServer.dir/chatserver.cpp.o: \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp \
- /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp

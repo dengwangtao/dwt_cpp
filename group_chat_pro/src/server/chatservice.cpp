@@ -3,6 +3,7 @@
 
 #include <functional>
 #include <muduo/base/Logging.h>
+#include <vector>
 #include "db.hpp"
 
 using namespace std::placeholders;
@@ -19,7 +20,20 @@ ChatService* ChatService::getInstance() {
 ChatService::ChatService() {
     _handlerMap[EnMsgType::LOGIN_MSG] = std::bind(&ChatService::login, this, _1, _2, _3);
     _handlerMap[EnMsgType::REG_MSG] = std::bind(&ChatService::reg, this, _1, _2, _3);
+    _handlerMap[EnMsgType::ONT_CHAT_MSG] = std::bind(&ChatService::oneChat, this, _1, _2, _3);
+    _handlerMap[EnMsgType::ADD_FRIEND] = std::bind(&ChatService::addFriend, this, _1, _2, _3);
+    _handlerMap[EnMsgType::CREATE_GROUP] = std::bind(&ChatService::createGroup, this, _1, _2, _3);
+    _handlerMap[EnMsgType::JOIN_GROUP] = std::bind(&ChatService::joinGroup, this, _1, _2, _3);
+    _handlerMap[EnMsgType::GROUP_CHAT_MSG] = std::bind(&ChatService::groupChat, this, _1, _2, _3);
 }
+
+// 全部用户下线, 重置所有状态
+void ChatService::reset() {
+
+    // 更新所有用户为offline
+    _userModel.resetState();
+}
+
 
 myHandler ChatService::getHandler(int msgid) {
 
@@ -58,6 +72,29 @@ void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) 
         response["errno"] = 0;
         response["id"] = user.getId();
         response["name"] = user.getName();
+
+        // 查询离线消息
+        auto messages = std::move(_offlinemsgModel.query(user.getId()));
+        if(!messages.empty()) {
+            response["offlinemsg"] = messages;
+
+            _offlinemsgModel.remove(user.getId()); // 读取完离线消息后, 将离线消息删除
+        }
+
+        // 查询好友消息
+        auto friends = std::move(_friendModel.query(user.getId()));
+        if(!friends.empty()) {
+            std::vector<std::string> friends_list;
+            for(const User& user : friends) {
+                json f;
+                f["id"] = user.getId();
+                f["name"] = user.getName();
+                f["state"] = user.getState();
+
+                friends_list.push_back(f.dump());
+            }
+            response["friends"] = friends_list;
+        }
 
         // 标记为已登录
         user.setState("online");
@@ -130,3 +167,91 @@ void ChatService::clientCloseException(const TcpConnectionPtr& conn) {
     }
 }
 
+
+// 一对一聊天
+void ChatService::oneChat(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+
+    int to_id = js["to"].get<int>(); // 接收方用户id
+
+    // 查找是否在线
+    bool to_online = false;
+    {
+        std::lock_guard<std::mutex> lock(_connMutex);
+
+        if(_userConnMap.count(to_id) > 0) {
+            // 在线 (直接转发消息)
+
+            _userConnMap[to_id]->send(js.dump()); // 直接发送过去
+
+            return;
+
+        } else {
+            // 不在线 (离线消息入库)
+
+            _offlinemsgModel.insert(to_id, js.dump());
+
+        }
+    }
+
+
+}
+
+
+// 添加好友请求
+void ChatService::addFriend(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+    int userid = js["id"].get<int>();
+    int friendid = js["friendid"].get<int>();
+
+    // 请求
+    _friendModel.insert(userid, friendid);
+}
+
+
+
+// 创建群组
+void ChatService::createGroup(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+
+    int userid = js["id"].get<int>();
+    std::string groupName = js["groupname"];
+    std::string groupDesc = js["groupdesc"];
+
+    Group group;
+    group.setGroupName(groupName);
+    group.setGroupDesc(groupDesc);
+
+    if(_groupModel.createGroup(group)) {
+        // 创建成功
+
+        // 将创建者加入群组
+        _groupModel.addGroup(userid, group.getId(), "creator");
+    }
+}
+
+// 加入群组
+void ChatService::joinGroup(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+    int userid = js["id"].get<int>();
+    int groupid = js["groupid"].get<int>();
+
+    _groupModel.addGroup(userid, groupid, "normal");
+}
+
+// 群聊天消息
+void ChatService::groupChat(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+    int userid = js["id"].get<int>();
+    int groupid = js["groupid"].get<int>();
+
+    std::vector<int> groupUsers = _groupModel.queryGroupUser(userid, groupid);
+
+
+
+    for(int u : groupUsers) {
+
+        std::lock_guard<std::mutex> lock(_connMutex); // 加锁 _userConnMap
+
+        if(_userConnMap.count(u)) {
+            _userConnMap[u]->send(js.dump());
+        } else {
+            _offlinemsgModel.insert(u, js.dump());
+        }
+    }
+}

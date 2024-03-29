@@ -67,3 +67,15 @@ bool UserModel::updateState(const User& user) {
     return false;
 
 }
+
+// 重置所有在线状态
+bool UserModel::resetState() {
+    char sql[] = "UPDATE `user` SET state='offline';";
+
+    MySQL mysql;
+    if(mysql.connect()) {
+        return mysql.update(sql);
+    }
+
+    return false;
+}

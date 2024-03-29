@@ -13,6 +13,9 @@ using namespace muduo::net;
 using json = nlohmann::json;
 
 #include "usermodel.hpp"
+#include "offlinemessagemodel.hpp"
+#include "friendmodel.hpp"
+#include "groupmodel.hpp"
 
 using myHandler = std::function<void(const TcpConnectionPtr&, json&, Timestamp)>;
 
@@ -28,14 +31,37 @@ public:
     myHandler getHandler(int);
 
     // 登录
-    void login(const TcpConnectionPtr&, json& js, Timestamp);
+    void login(const TcpConnectionPtr&, json&, Timestamp);
 
     // 注册
-    void reg(const TcpConnectionPtr&, json& js, Timestamp);
+    void reg(const TcpConnectionPtr&, json&, Timestamp);
+
+
+    // 一对一聊天
+    void oneChat(const TcpConnectionPtr&, json&, Timestamp);
+
+
+    // 添加好友请求
+    void addFriend(const TcpConnectionPtr&, json&, Timestamp);
+
+
+    // 创建群组
+    void createGroup(const TcpConnectionPtr&, json&, Timestamp);
+
+    // 加入群组
+    void joinGroup(const TcpConnectionPtr&, json&, Timestamp);
+
+    // 群聊天消息
+    void groupChat(const TcpConnectionPtr&, json&, Timestamp);
+
+
 
     // 客户端异常退出
     void clientCloseException(const TcpConnectionPtr&);
 
+    // 全部用户下线, 重置所有状态
+    void reset();
+    
 private:
     ChatService();
 
@@ -51,11 +77,13 @@ private:
     // 互斥锁
     std::mutex _connMutex;
     // 用户对应的连接
-    std::unordered_map<int, TcpConnectionPtr> _userConnMap;
+    std::unordered_map<int, TcpConnectionPtr> _userConnMap; // {userid -> connPtr}
 
     // 数据操作类
     UserModel _userModel;
-
+    OfflineMessageModel _offlinemsgModel;
+    FriendModel _friendModel;
+    GroupModel _groupModel;
 };
 
 

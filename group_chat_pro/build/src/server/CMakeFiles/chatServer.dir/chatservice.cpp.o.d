@@ -269,6 +269,11 @@ src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/public.hpp \
  /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db/db.hpp \

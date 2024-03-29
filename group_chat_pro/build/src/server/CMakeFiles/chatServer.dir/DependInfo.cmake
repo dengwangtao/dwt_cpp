@@ -12,6 +12,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatservice.cpp" "src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o.d"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/db/db.cpp" "src/server/CMakeFiles/chatServer.dir/db/db.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/db/db.cpp.o.d"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/main.cpp" "src/server/CMakeFiles/chatServer.dir/main.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/main.cpp.o.d"
+  "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/friendmodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.o.d"
+  "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/groupmodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o.d"
+  "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/offlinemessagemodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o.d"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o.d"
   )
 
