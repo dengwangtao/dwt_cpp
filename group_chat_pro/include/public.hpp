@@ -8,13 +8,16 @@ enum EnMsgType{
     REG_MSG,        // 注册请求
     REG_MSG_ACK,    // 注册响应消息
     
-    ONT_CHAT_MSG,   // 私聊消息
+    ONE_CHAT_MSG,   // 私聊消息
 
     ADD_FRIEND,     // 添加好友
 
     CREATE_GROUP,   // 创建群组
     JOIN_GROUP,     // 加入群组
     GROUP_CHAT_MSG, // 群聊天
+
+    
+    LOGINOUT_MSG, // 注销消息
 };
 
 

@@ -3,7 +3,7 @@
 #include <muduo/base/Logging.h>
 
 // 数据库配置信息
-static string server = "172.17.0.2";
+static string server = "172.17.0.3";
 static string user = "groupchat";
 static string password = "123456";
 static string dbname = "group_chat_pro";

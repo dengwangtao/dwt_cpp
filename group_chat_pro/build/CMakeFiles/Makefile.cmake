@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.29.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.0-rc3/CMakeSystem.cmake"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/CMakeLists.txt"
+  "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/client/CMakeLists.txt"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/CMakeLists.txt"
   "/usr/local/share/cmake-3.29/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.29/Modules/CMakeCXXInformation.cmake"
@@ -44,9 +45,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/server/CMakeFiles/chatServer.dir/DependInfo.cmake"
+  "src/client/CMakeFiles/chatClient.dir/DependInfo.cmake"
   )

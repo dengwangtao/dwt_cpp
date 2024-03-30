@@ -47,3 +47,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/client/cmake_install.cmake")
+endif()
+

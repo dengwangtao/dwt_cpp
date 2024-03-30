@@ -5,6 +5,9 @@ src/server/CMakeFiles/chatServer.dir/chatserver.cpp.o: /dwt/cpp_code/dwt_cpp/gro
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatserver.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp \
@@ -353,6 +356,9 @@ src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o: /dwt/cpp_code/dwt_cpp/gr
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db/db.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp \
@@ -925,6 +931,9 @@ src/server/CMakeFiles/chatServer.dir/main.cpp.o: /dwt/cpp_code/dwt_cpp/group_cha
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatserver.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
+  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp \
   /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp \
@@ -2092,10 +2101,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp:
 
-/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp:
-
-/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp:
-
 /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/friendmodel.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
@@ -2228,12 +2233,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket_type.h:
@@ -2266,6 +2265,10 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
 /usr/include/c++/11/bits/slice_array.h:
 
 /usr/include/c++/11/bits/gslice.h:
@@ -2287,8 +2290,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatserver.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp:
 
@@ -2316,8 +2317,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/c++/11/bits/gslice_array.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
@@ -2326,6 +2325,14 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/bits/functexcept.h:
 
+/usr/include/c++/11/iostream:
+
+/usr/include/mysql/mysql.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/boost/config/workaround.hpp:
+
 /usr/include/c++/11/streambuf:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
@@ -2333,20 +2340,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/forward_list.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp:
-
-/usr/include/c++/11/map:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty/json.hpp:
-
-/usr/include/boost/core/demangle.hpp:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/include/public.hpp:
 
@@ -2400,6 +2393,22 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
+/usr/include/boost/config/detail/select_compiler_config.hpp:
+
+/usr/include/c++/11/valarray:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/boost/container_hash/hash_fwd.hpp:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/boost/exception/exception.hpp:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp:
+
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/assert.h:
@@ -2410,26 +2419,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/cstdlib:
 
-/usr/include/muduo/base/copyable.h:
-
-/usr/include/boost/config/detail/select_compiler_config.hpp:
-
-/usr/include/c++/11/valarray:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/boost/container_hash/hash_fwd.hpp:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/boost/exception/exception.hpp:
-
 /usr/include/boost/config/compiler/gcc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
@@ -2437,10 +2426,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/clocale:
 
 /usr/include/boost/type_index/stl_type_index.hpp:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/c++/11/bits/invoke.h:
 
 /usr/include/boost/any/detail/placeholder.hpp:
 
@@ -2451,10 +2436,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/unistd.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
@@ -2474,11 +2455,25 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
+/usr/include/c++/11/bits/invoke.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/muduo/base/copyable.h:
+
+/usr/include/mysql/mysql_version.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/errno.h:
+
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatserver.cpp:
 
 /usr/include/boost/any/fwd.hpp:
+
+/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
@@ -2486,15 +2481,15 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/cassert:
 
-/usr/include/c++/11/iostream:
-
-/usr/include/mysql/mysql.h:
-
-/usr/include/boost/config/workaround.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
 /usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -2508,25 +2503,55 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/bits/stl_function.h:
 
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp:
+
+/usr/include/c++/11/map:
+
 /usr/include/features.h:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp:
 
 /usr/include/c++/11/bits/hashtable.h:
 
-/usr/include/mysql/mysql_version.h:
+/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty/json.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/c++/11/bits/exception.h:
 
-/usr/include/c++/11/bits/stl_numeric.h:
+/usr/include/boost/core/demangle.hpp:
 
-/usr/include/c++/11/backward/auto_ptr.h:
+/usr/include/c++/11/bits/atomic_base.h:
 
-/usr/include/boost/config/detail/select_platform_config.hpp:
+/usr/include/c++/11/ext/numeric_traits.h:
 
-/usr/include/c++/11/bits/stl_uninitialized.h:
+/usr/include/boost/config/helper_macros.hpp:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/boost/cstdint.hpp:
+
+/usr/include/alloca.h:
 
 /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp:
 
@@ -2538,16 +2563,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/muduo/base/Timestamp.h:
 
-/usr/include/boost/config/helper_macros.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/boost/cstdint.hpp:
-
-/usr/include/alloca.h:
-
 /usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
@@ -2555,16 +2570,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/bits/valarray_array.tcc:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/11/bits/predefined_ops.h:
-
-/usr/include/c++/11/bits/std_abs.h:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
@@ -2589,8 +2594,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/vector:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -2618,14 +2621,6 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/tuple:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/11/type_traits:
-
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/bits/alloc_traits.h:
@@ -2635,6 +2630,20 @@ src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o: /dwt/cpp_code/dwt_cp
 /usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/muduo/base/Atomic.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/tuple:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/type_traits:
 
 /usr/include/c++/11/cstddef:
 

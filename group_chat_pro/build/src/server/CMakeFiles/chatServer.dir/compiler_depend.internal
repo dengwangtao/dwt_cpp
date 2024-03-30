@@ -6,6 +6,9 @@ src/server/CMakeFiles/chatServer.dir/chatserver.cpp.o
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatserver.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp
@@ -355,6 +358,9 @@ src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db/db.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp
@@ -929,6 +935,9 @@ src/server/CMakeFiles/chatServer.dir/main.cpp.o
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatserver.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/chatservice.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/friendmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/offlinemessagemodel.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/user.hpp
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/usermodel.hpp

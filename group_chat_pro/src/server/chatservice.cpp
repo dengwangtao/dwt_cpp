@@ -20,11 +20,12 @@ ChatService* ChatService::getInstance() {
 ChatService::ChatService() {
     _handlerMap[EnMsgType::LOGIN_MSG] = std::bind(&ChatService::login, this, _1, _2, _3);
     _handlerMap[EnMsgType::REG_MSG] = std::bind(&ChatService::reg, this, _1, _2, _3);
-    _handlerMap[EnMsgType::ONT_CHAT_MSG] = std::bind(&ChatService::oneChat, this, _1, _2, _3);
+    _handlerMap[EnMsgType::ONE_CHAT_MSG] = std::bind(&ChatService::oneChat, this, _1, _2, _3);
     _handlerMap[EnMsgType::ADD_FRIEND] = std::bind(&ChatService::addFriend, this, _1, _2, _3);
     _handlerMap[EnMsgType::CREATE_GROUP] = std::bind(&ChatService::createGroup, this, _1, _2, _3);
     _handlerMap[EnMsgType::JOIN_GROUP] = std::bind(&ChatService::joinGroup, this, _1, _2, _3);
     _handlerMap[EnMsgType::GROUP_CHAT_MSG] = std::bind(&ChatService::groupChat, this, _1, _2, _3);
+    _handlerMap[EnMsgType::LOGINOUT_MSG] = std::bind(&ChatService::logout, this, _1, _2, _3);
 }
 
 // 全部用户下线, 重置所有状态
@@ -100,6 +101,37 @@ void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) 
         user.setState("online");
         _userModel.updateState(user);
 
+
+        // 查询所在群组
+        auto groups = _groupModel.queryGroups(user.getId());
+        if(!groups.empty()) {
+            std::vector<std::string> group_list;
+            for(const Group& g : groups) {
+                json f;
+                f["id"] = g.getId();
+                f["groupname"] = g.getGroupName();
+                f["groupdesc"] = g.getGroupDesc();
+
+                std::vector<std::string> g_users;
+                for(const GroupUser& guser : g.getUsers()) {
+                    json js_user;
+                    js_user["id"] = guser.getId();
+                    js_user["name"] = guser.getName();
+                    js_user["state"] = guser.getState();
+                    js_user["role"] = guser.getRole();
+
+                    g_users.push_back(js_user.dump());
+                }
+
+                f["users"] = g_users;
+
+                group_list.push_back(f.dump());
+            }
+            response["groups"] = group_list;
+        }
+
+
+
     } else {
         // fail
         response["msgid"] = EnMsgType::LOGIN_MSG_ACK;
@@ -171,7 +203,7 @@ void ChatService::clientCloseException(const TcpConnectionPtr& conn) {
 // 一对一聊天
 void ChatService::oneChat(const TcpConnectionPtr& conn, json& js, Timestamp time) {
 
-    int to_id = js["to"].get<int>(); // 接收方用户id
+    int to_id = js["toid"].get<int>(); // 接收方用户id
 
     // 查找是否在线
     bool to_online = false;
@@ -254,4 +286,23 @@ void ChatService::groupChat(const TcpConnectionPtr& conn, json& js, Timestamp ti
             _offlinemsgModel.insert(u, js.dump());
         }
     }
+}
+
+// 下线
+void ChatService::logout(const TcpConnectionPtr& conn, json& js, Timestamp time) {
+
+    int userid = js["id"].get<int>();
+
+    {
+        std::lock_guard<std::mutex> lock(_connMutex);
+        auto it = _userConnMap.find(userid);
+        if (it != _userConnMap.end())
+        {
+            _userConnMap.erase(it);
+        }
+    }
+
+    // 更新用户的状态信息
+    User user(userid, "", "", "offline");
+    _userModel.updateState(user);
 }

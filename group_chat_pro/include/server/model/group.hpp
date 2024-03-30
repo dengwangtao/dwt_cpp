@@ -20,6 +20,8 @@ public:
 
     std::vector<GroupUser> &getUsers() { return this->users; }
 
+    const std::vector<GroupUser> &getUsers() const { return this->users; }
+
 private:
     int id;
     std::string groupname;

@@ -129,6 +129,19 @@ chatServer/fast:
 	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/chatServer.dir/build.make src/server/CMakeFiles/chatServer.dir/build
 .PHONY : chatServer/fast
 
+#=============================================================================
+# Target rules for targets named chatClient
+
+# Build rule for target.
+chatClient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chatClient
+.PHONY : chatClient
+
+# fast build rule for target.
+chatClient/fast:
+	$(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/chatClient.dir/build.make src/client/CMakeFiles/chatClient.dir/build
+.PHONY : chatClient/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... chatClient"
 	@echo "... chatServer"
 .PHONY : help
 

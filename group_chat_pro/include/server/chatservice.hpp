@@ -33,6 +33,9 @@ public:
     // 登录
     void login(const TcpConnectionPtr&, json&, Timestamp);
 
+    // 下线
+    void logout(const TcpConnectionPtr&, json&, Timestamp);
+
     // 注册
     void reg(const TcpConnectionPtr&, json&, Timestamp);
 
