@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/groupmodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o.d"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/offlinemessagemodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o.d"
   "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp" "src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o.d"
+  "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/redis/redis.cpp" "src/server/CMakeFiles/chatServer.dir/redis/redis.cpp.o" "gcc" "src/server/CMakeFiles/chatServer.dir/redis/redis.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -61,6 +61,12 @@
 				"file" : 1,
 				"line" : 12,
 				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 2
 			}
 		]
 	},
@@ -94,6 +100,10 @@
 				{
 					"backtrace" : 7,
 					"path" : "/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis"
 				}
 			],
 			"language" : "CXX",

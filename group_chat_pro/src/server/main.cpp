@@ -12,14 +12,21 @@ void quit_reset_user(int) {
     exit(0);
 }
 
-int main() {
-    //std::cout << "Hello World\n";
+int main(int argc, char** argv) {
+
+    uint16_t port = 8888;
+    std::string ip = "127.0.0.1";
+    
+    if(argc >= 3) {
+        ip = std::string(argv[1]);
+        port = atoi(argv[2]);
+    }
 
     // 处理ctrl + C 信号
     signal(SIGINT, quit_reset_user);
 
     EventLoop loop;
-    InetAddress addr("127.0.0.1", 8888);
+    InetAddress addr(ip, port);
 
     ChatServer server(&loop, addr, "chatserver");
 

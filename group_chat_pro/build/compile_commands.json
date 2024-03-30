@@ -1,55 +1,61 @@
 [
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/chatserver.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatserver.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/chatserver.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatserver.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatserver.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/chatserver.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/chatservice.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatservice.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/chatservice.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatservice.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/chatservice.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/chatservice.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/main.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/main.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/main.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/main.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/main.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/main.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/db/db.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/db/db.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/db/db.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/db/db.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/db/db.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/db/db.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/friendmodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/friendmodel.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/friendmodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/friendmodel.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/friendmodel.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/model/friendmodel.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/groupmodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/groupmodel.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/groupmodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/groupmodel.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/groupmodel.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/model/groupmodel.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/offlinemessagemodel.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/offlinemessagemodel.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/offlinemessagemodel.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/model/offlinemessagemodel.cpp.o"
 },
 {
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/usermodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/model/usermodel.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/model/usermodel.cpp",
   "output": "src/server/CMakeFiles/chatServer.dir/model/usermodel.cpp.o"
 },
 {
+  "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/server",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatServer.dir/redis/redis.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/redis/redis.cpp",
+  "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/server/redis/redis.cpp",
+  "output": "src/server/CMakeFiles/chatServer.dir/redis/redis.cpp.o"
+},
+{
   "directory": "/dwt/cpp_code/dwt_cpp/group_chat_pro/build/src/client",
-  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -g -std=gnu++11 -o CMakeFiles/chatClient.dir/main.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/client/main.cpp",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis -g -std=gnu++11 -o CMakeFiles/chatClient.dir/main.cpp.o -c /dwt/cpp_code/dwt_cpp/group_chat_pro/src/client/main.cpp",
   "file": "/dwt/cpp_code/dwt_cpp/group_chat_pro/src/client/main.cpp",
   "output": "src/client/CMakeFiles/chatClient.dir/main.cpp.o"
 }

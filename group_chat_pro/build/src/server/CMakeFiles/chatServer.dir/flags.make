@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model
+CXX_INCLUDES = -I/dwt/cpp_code/dwt_cpp/group_chat_pro/thirdparty -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/db -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model -I/dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis
 
 CXX_FLAGS = -g -std=gnu++11
 

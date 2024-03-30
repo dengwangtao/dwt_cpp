@@ -68,6 +68,10 @@
         "variant": "cpp",
         "codecvt": "cpp",
         "list": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "csignal": "cpp",
+        "any": "cpp",
+        "charconv": "cpp",
+        "future": "cpp"
     }
 }
