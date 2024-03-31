@@ -17,6 +17,8 @@ using json = nlohmann::json;
 #include "friendmodel.hpp"
 #include "groupmodel.hpp"
 
+#include "redis.hpp"
+
 using myHandler = std::function<void(const TcpConnectionPtr&, json&, Timestamp)>;
 
 
@@ -64,6 +66,10 @@ public:
 
     // 全部用户下线, 重置所有状态
     void reset();
+
+private:
+    // 处理redis消息
+    void handleRedisSubscribeMessage(int, const std::string&);
     
 private:
     ChatService();
@@ -87,6 +93,10 @@ private:
     OfflineMessageModel _offlinemsgModel;
     FriendModel _friendModel;
     GroupModel _groupModel;
+
+    // Redis操作
+    Redis _redis;
+
 };
 
 

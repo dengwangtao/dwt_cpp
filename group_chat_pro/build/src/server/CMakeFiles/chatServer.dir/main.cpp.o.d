@@ -278,6 +278,10 @@ src/server/CMakeFiles/chatServer.dir/main.cpp.o: \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupmodel.hpp \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/group.hpp \
  /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/model/groupuser.hpp \
+ /dwt/cpp_code/dwt_cpp/group_chat_pro/include/server/redis/redis.hpp \
+ /usr/local/include/hiredis/hiredis.h /usr/local/include/hiredis/read.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/local/include/hiredis/sds.h /usr/local/include/hiredis/alloc.h \
  /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \

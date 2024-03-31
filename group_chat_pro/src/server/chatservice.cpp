@@ -26,6 +26,11 @@ ChatService::ChatService() {
     _handlerMap[EnMsgType::JOIN_GROUP] = std::bind(&ChatService::joinGroup, this, _1, _2, _3);
     _handlerMap[EnMsgType::GROUP_CHAT_MSG] = std::bind(&ChatService::groupChat, this, _1, _2, _3);
     _handlerMap[EnMsgType::LOGINOUT_MSG] = std::bind(&ChatService::logout, this, _1, _2, _3);
+
+    if(_redis.connect()) {
+
+        _redis.init_notify_handler(std::bind(&ChatService::handleRedisSubscribeMessage, this, _1, _2));
+    }
 }
 
 // 全部用户下线, 重置所有状态
@@ -97,11 +102,6 @@ void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) 
             response["friends"] = friends_list;
         }
 
-        // 标记为已登录
-        user.setState("online");
-        _userModel.updateState(user);
-
-
         // 查询所在群组
         auto groups = _groupModel.queryGroups(user.getId());
         if(!groups.empty()) {
@@ -130,6 +130,13 @@ void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) 
             response["groups"] = group_list;
         }
 
+
+        // 订阅自己的消息
+        _redis.subscribe(user.getId());
+
+        // 标记为已登录
+        user.setState("online");
+        _userModel.updateState(user);
 
 
     } else {
@@ -176,29 +183,6 @@ void ChatService::reg(const TcpConnectionPtr& conn, json& js, Timestamp time) {
 }
 
 
-void ChatService::clientCloseException(const TcpConnectionPtr& conn) {
-    int id = -1;
-
-    {
-        std::lock_guard<std::mutex> locker(_connMutex);
-        for(auto it = _userConnMap.begin(); it != _userConnMap.end(); ++ it) {
-            if(it->second == conn) {
-                id = it->first; // 取出id
-                _userConnMap.erase(it);
-                break;
-            }
-        }
-    }
-
-    // 更新状态信息
-    if(id != -1) {
-        User user;
-        user.setId(id);
-        user.setState("offline");
-        _userModel.updateState(user);
-    }
-}
-
 
 // 一对一聊天
 void ChatService::oneChat(const TcpConnectionPtr& conn, json& js, Timestamp time) {
@@ -212,19 +196,20 @@ void ChatService::oneChat(const TcpConnectionPtr& conn, json& js, Timestamp time
 
         if(_userConnMap.count(to_id) > 0) {
             // 在线 (直接转发消息)
-
             _userConnMap[to_id]->send(js.dump()); // 直接发送过去
-
             return;
-
-        } else {
-            // 不在线 (离线消息入库)
-
-            _offlinemsgModel.insert(to_id, js.dump());
-
         }
     }
 
+    User user = _userModel.query(to_id);
+    if(user.getState() == "online") {
+        _redis.publish(user.getId(), js.dump());
+        return;
+    }
+
+
+    // 不在线 (离线消息入库)
+    _offlinemsgModel.insert(to_id, js.dump());
 
 }
 
@@ -282,9 +267,43 @@ void ChatService::groupChat(const TcpConnectionPtr& conn, json& js, Timestamp ti
 
         if(_userConnMap.count(u)) {
             _userConnMap[u]->send(js.dump());
-        } else {
-            _offlinemsgModel.insert(u, js.dump());
+            continue;
         }
+
+        User guser = _userModel.query(u);
+        if(guser.getState() == "online") {
+            _redis.publish(guser.getId(), js.dump());
+            continue;
+        }
+
+        _offlinemsgModel.insert(u, js.dump());
+        
+    }
+}
+
+
+void ChatService::clientCloseException(const TcpConnectionPtr& conn) {
+    int id = -1;
+
+    {
+        std::lock_guard<std::mutex> locker(_connMutex);
+        for(auto it = _userConnMap.begin(); it != _userConnMap.end(); ++ it) {
+            if(it->second == conn) {
+                id = it->first; // 取出id
+                _userConnMap.erase(it);
+                break;
+            }
+        }
+    }
+
+    _redis.unsubscribe(id);
+
+    // 更新状态信息
+    if(id != -1) {
+        User user;
+        user.setId(id);
+        user.setState("offline");
+        _userModel.updateState(user);
     }
 }
 
@@ -302,7 +321,23 @@ void ChatService::logout(const TcpConnectionPtr& conn, json& js, Timestamp time)
         }
     }
 
+    _redis.unsubscribe(userid);
+
     // 更新用户的状态信息
     User user(userid, "", "", "offline");
     _userModel.updateState(user);
+}
+
+
+void ChatService::handleRedisSubscribeMessage(int userid, const std::string& message) {
+    lock_guard<mutex> lock(_connMutex);
+    auto it = _userConnMap.find(userid);
+    if (it != _userConnMap.end())
+    {
+        it->second->send(message);
+        return;
+    }
+
+    // 存储该用户的离线消息
+    _offlinemsgModel.insert(userid, message);
 }

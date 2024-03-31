@@ -16,7 +16,7 @@ public:
     // 连接到Redis服务器 
     bool connect();
 
-    // 发布管道
+    // 发布消息
     bool publish(int channel, const std::string& message);
 
     // 订阅管道

@@ -296,8 +296,9 @@ void doLoginResponse(json &responsejs) {
 void readTaskHandler(int clientfd)
 {
     while(true) {
-        char buffer[1024] = {0};
-        int len = recv(clientfd, buffer, 1024, 0);  // 阻塞了
+        const int buf_size = 2048;
+        char buffer[buf_size] = {0};
+        int len = recv(clientfd, buffer, buf_size, 0);  // 阻塞了
         if (-1 == len || 0 == len) {
             close(clientfd);
             exit(-1);
