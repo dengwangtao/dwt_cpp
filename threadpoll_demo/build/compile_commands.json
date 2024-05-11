@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/dwt/cpp_code/dwt_cpp/threadpoll_demo/build/src",
+  "command": "/usr/bin/g++  -I/dwt/cpp_code/dwt_cpp/threadpoll_demo/src/. -g -o CMakeFiles/main.dir/test.cpp.o -c /dwt/cpp_code/dwt_cpp/threadpoll_demo/src/test.cpp",
+  "file": "/dwt/cpp_code/dwt_cpp/threadpoll_demo/src/test.cpp",
+  "output": "src/CMakeFiles/main.dir/test.cpp.o"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/main.dir/test.cpp.o -o /dwt/cpp_code/dwt_cpp/threadpoll_demo/bin/main  -lpthread
