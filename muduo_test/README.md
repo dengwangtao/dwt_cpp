@@ -10,7 +10,8 @@ muduo基于boost, 需要先安装boost库
 
 ```shell
 # 下载boost源码包 boost.org
-wget https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.gz
+# wget https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.gz
+# wget https://archives.boost.io/release/1.84.0/source/boost_1_84_0.tar.gz
 
 # 解压
 tar -zxvf boost_1_84_0.tar.gz
